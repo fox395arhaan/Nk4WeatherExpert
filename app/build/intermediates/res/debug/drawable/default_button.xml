@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <solid android:color="@color/primarColor"/>
+
+</shape><!-- From: file:/G:/studio_project_21_10_2015/weather/Fox395Weather-master/app/src/main/res/drawable/default_button.xml -->

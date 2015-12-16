@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.expert.weather"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 10
+        versionName '1.8.01'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':yWeatherGetter4a')
+    compile files('libs/joda-time-2.3.jar')
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.google.android.gms:play-services-ads:8.1.0'
+    compile 'com.android.support:support-v4:23.1.0'
+}
